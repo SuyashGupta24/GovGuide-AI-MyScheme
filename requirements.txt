@@ -4,7 +4,6 @@ os
 langchain
 langchain_ollama
 faiss_cpu
-faiss
 python_dotenv
 json
 numpy
