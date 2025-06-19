@@ -1,4 +1,8 @@
-import faiss
+try:
+    import faiss
+except ImportError:
+    import faiss_cpu as faiss
+
 import os
 import json
 from sentence_transformers import SentenceTransformer
