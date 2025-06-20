@@ -4,7 +4,8 @@ from sentence_transformers import SentenceTransformer
 import faiss
 import numpy as np
 # Config paths
-DATA_PATH = "C:/Users/Dell/Desktop/suyash/data/processed_schemes.json"  
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(BASE_DIR, "..", "data", "processed_schemes.json")  
 INDEX_DIR = os.path.join("faiss_db")
 os.makedirs(INDEX_DIR, exist_ok=True)
 def generate_embeddings():
