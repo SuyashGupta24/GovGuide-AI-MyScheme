@@ -27,7 +27,7 @@ def main():
                     st.error(f"Error: {str(e)}")
 
     st.markdown("---")
-    st.caption("Built using FAISS + Llama3.1 + Streamlit 🚀")
+    st.caption("Built by Suyash🚀")
 
 if __name__ == "__main__":
     main()
