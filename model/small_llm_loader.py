@@ -2,7 +2,8 @@ from langchain_openai import ChatOpenAI
 import os
 from dotenv import load_dotenv
 
-load_dotenv()  
+from pathlib import Path
+load_dotenv(dotenv_path=Path(__file__).resolve().parents[1] / '.env') 
 
 def load_llm():
     openai_api_key = os.getenv("OPENAI_API_KEY")  
