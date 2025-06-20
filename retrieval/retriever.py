@@ -11,7 +11,9 @@ INDEX_DIR = os.path.join("faiss_db")
 
 class SchemeRetriever:
     def __init__(self):
-        self.index = faiss.read_index("C:/Users/Dell/Desktop/suyash/faiss_db/schemes.index")
+        INDEX_DIR = os.path.join(os.path.dirname(__file__), "..", "faiss_db")
+        self.index = faiss.read_index(os.path.join(INDEX_DIR, "schemes.index"))
+
         with open(os.path.join(INDEX_DIR, "id2text.json"), "r", encoding="utf-8") as f:
             self.id2text = json.load(f)
         self.embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
