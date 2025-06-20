@@ -6,7 +6,7 @@ pydantic==1.10.13
 langchain-core==0.1.44
 sentence-transformers==2.2.2
 transformers==4.30.2
-tokenizers==0.13.3  # optional, will be picked by transformers anyway
+tokenizers==0.13.3
 huggingface_hub==0.14.1
 faiss-cpu==1.7.4
 python-dotenv==1.0.1
